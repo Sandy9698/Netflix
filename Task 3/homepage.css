@@ -1,0 +1,313 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Netflix bg img.jpg"); 
+    padding: 10px 8%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.btns{
+    background: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 3px;
+    width: 100px;
+    height: 4vh;
+    border: .4px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btns:hover{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+#btn1{
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;   
+    cursor: pointer;
+}
+
+#btn1:hover{
+    background: darkred;
+}
+
+hr{
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    background: transparent;
+}
+.content h1{
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 600;
+    width: 6000px;
+    background: transparent;
+}
+
+.content h3{
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    background: transparent;
+}
+
+.content p{
+    background: transparent;
+}
+
+.sign-up input{
+    width: 300px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: transparent;
+    color: #ffff;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.sign-up input:focus{
+    border: 1px solid red;
+    outline: 1px solid red;
+}
+
+.sign-up button{
+    background: #db0001;
+    padding: 15px 30px;
+    color:#fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.sign-up button:hover{
+    background: darkred ;
+}
+
+.text-content1{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;   
+}
+
+.image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.text-content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.text-content p{
+    font-size: 26px;
+    margin-left: 60px;
+}
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.text-content h2{
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.text-content h3{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.ques{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.ques h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.acc{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    
+}
+.acc li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+}
+.acc li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    font-size: 34px;
+    content: "+";
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.acc .container{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.acc input[type="radio"]:checked + label + .container{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.acc input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.copyright-text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .lang{
+        padding: 4px 8px;
+    }
+    .header .content{
+        transform: none;
+        position: unset;
+        padding-top: 150px;
+    }
+    
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
